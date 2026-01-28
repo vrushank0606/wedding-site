@@ -4,13 +4,14 @@ This repository contains a static wedding website (HTML/CSS/assets).
 
 ## Host it on GitHub Pages (recommended)
 
-This repo is configured to deploy automatically to **GitHub Pages** on every push to the `main` branch via GitHub Actions (`.github/workflows/pages.yml`).
+This repo is configured to deploy automatically to **GitHub Pages** on every push to the `main` branch by publishing a `gh-pages` branch via GitHub Actions (`.github/workflows/gh-pages.yml`).
 
 ### One-time GitHub settings
 
 1. Go to **GitHub repo → Settings → Pages**
 2. Under **Build and deployment**
-   - **Source**: select **GitHub Actions**
+   - **Source**: select **Deploy from a branch**
+   - **Branch**: select `gh-pages` / `root`
 
 After that, your site will be available at:
 - `https://<your-username>.github.io/<repo-name>/`

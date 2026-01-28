@@ -1,4 +1,4 @@
-name: Deploy to GitHub Pages
+name: (Deprecated) Deploy to GitHub Pages
 
 on:
   push:
@@ -17,6 +17,7 @@ concurrency:
 jobs:
   deploy:
     runs-on: ubuntu-latest
+    if: false
     environment:
       name: github-pages
       url: ${{ steps.deployment.outputs.page_url }}
