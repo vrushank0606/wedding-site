@@ -326,6 +326,17 @@ body {
   background-color: var(--lavender-light);
 }
 
+/* Gallery alignment: keep thumbnails a consistent size so the grid lines up */
+.gallery a {
+  display: block;
+}
+
+.gallery img {
+  aspect-ratio: 1 / 1;
+  object-fit: cover;
+  object-position: center;
+}
+
 /* RSVP */
 .rsvp {
   background-color: var(--bg);
