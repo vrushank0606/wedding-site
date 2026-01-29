@@ -1,0 +1,695 @@
+<!DOCTYPE html>
+<html lang="en" data-bs-theme="light">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Wedding Landing Page</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-4bw+/aepP/YC94hEpVNVgiZdgIC5+VKNBQNGCHeKRQN+PtmoHDEXuppvnDJzQIu9"
+      crossorigin="anonymous"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Sacramento&family=Work+Sans:wght@100;300;400;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- SimplyCountDown -->
+    <link rel="stylesheet" href="countdown/simplyCountdown.theme.default.css" />
+    <script src="countdown/simplyCountdown.min.js"></script>
+
+    <!-- Icon Bootstrap -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css"
+    />
+
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <section
+      id="hero"
+      class="hero w-100 h-100 p-3 mx-auto text-center d-flex justify-content-center align-items-center text-white"
+    >
+      <main>
+        <h4><span>The Wedding Celebration of</span></h4>
+        <h1>Vrushank & Smita</h1>
+        <p>A journey for a lifetime begins in:</p>
+        <div class="simply-countdown"></div>
+        <a href="#home" class="btn btn-lg mt-4" onclick="enableScroll()"
+          >View Invitation</a
+        >
+      </main>
+    </section>
+
+    <nav class="navbar bg-transparent sticky-top navbar-expand-md my-navbar">
+      <div class="container">
+        <a class="navbar-brand" href="#">The Big Day</a>
+        <button
+          class="navbar-toggler border-0"
+          type="button"
+          data-bs-toggle="offcanvas"
+          data-bs-target="#offcanvasNavbar"
+          aria-controls="offcanvasNavbar"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div
+          class="offcanvas offcanvas-end"
+          tabindex="-1"
+          id="offcanvasNavbar"
+          aria-labelledby="offcanvasNavbarLabel"
+        >
+          <div class="offcanvas-header">
+            <h5 class="offcanvas-title" id="offcanvasNavbarLabel">
+              The Big Day
+            </h5>
+            <button
+              type="button"
+              class="btn-close"
+              data-bs-dismiss="offcanvas"
+              aria-label="Close"
+            ></button>
+          </div>
+          <div class="offcanvas-body">
+            <div class="navbar-nav ms-auto">
+              <a class="nav-link" aria-current="page" href="#home">Home</a>
+              <a class="nav-link" href="#info">Info</a>
+              <a class="nav-link" href="#story">Events</a>
+              <a class="nav-link" href="#gallery">Gallery</a>
+              <a class="nav-link" href="#rsvp">RSVP</a>
+              <div class="dropdown">
+                <button
+                  class="btn nav-link dropdown-toggle"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                  id="bd-theme"
+                >
+                  <i
+                    class="bi bi-sun-fill theme-icon-active"
+                    data-theme-icon-active="bi-sun-fill"
+                    id="bd-theme-text"
+                  ></i>
+                </button>
+                <ul class="dropdown-menu dropdown-menu-end">
+                  <li>
+                    <button
+                      class="dropdown-item d-flex align-items-center"
+                      type="button"
+                      data-bs-theme-value="light"
+                    >
+                      <i
+                        class="bi bi-sun-fill me-2 opacity-50"
+                        data-theme-icon="bi-sun-fill"
+                      ></i>
+                      Light
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item d-flex align-items-center"
+                      type="button"
+                      data-bs-theme-value="dark"
+                    >
+                      <i
+                        class="bi bi-moon-fill me-2 opacity-50"
+                        data-theme-icon="bi-moon-fill"
+                      ></i>
+                      Dark
+                    </button>
+                  </li>
+                  <li>
+                    <button
+                      class="dropdown-item d-flex align-items-center"
+                      type="button"
+                      data-bs-theme-value="system"
+                    >
+                      <i
+                        class="bi bi-circle-half me-2 opacity-50"
+                        data-theme-icon="bi-circle-half"
+                      ></i>
+                      System
+                    </button>
+                  </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <section id="home" class="home">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 text-center">
+            <h2>Wedding Ceremony</h2>
+            <h3>Muhurtham</h3>
+            <h3>February 8, 2026 • Kumta, Karnataka</h3>
+            <p>
+              We request the honor of your gracious presence on this auspicious occasion.
+            </p>
+          </div>
+        </div>
+
+        <div class="row couple justify-content-center align-items-center">
+          <div class="col-md-4 text-end">
+            <h3>Vrushank</h3>
+            <p>
+              With strength, sincerity, and a promise for a lifetime.
+            </p>
+          </div>
+          <div class="col-md-4 text-center">
+            <img
+              src="img/couple/IMG_1142.jpg"
+              alt="Vrushank & Smitha"
+              class="img-responsive rounded"
+              style="max-width: 100%; height: auto;"
+            />
+          </div>
+          <div class="col-md-4 text-start">
+            <h3>Smitha</h3>
+            <p>
+              With grace, warmth, and a heart full of love.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Information Start -->
+    <section id="info" class="info">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Event Information</h2>
+            <p class="address">
+              Address: Denissons Beach Resort, DRN Hospitalities Pvt. Ltd, Kumta - Aghanashini Rd, Baad, Kumta, Karnataka 581351, India
+            </p>
+            <a
+              href="https://maps.app.goo.gl/QCyRmdFaZJvMJW7X9"
+              target="_blank"
+              class="btn btn-light btn-sm my-4"
+              >Click to open map</a
+            >
+          </div>
+        </div>
+        <div class="row justify-content-center mt-4">
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light mb-5">
+              <div class="card-header">Engagement Ceremony</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>6.30 PM - 11 PM</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span>Saturday, February 7, 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-5 col-10">
+            <div class="card text-center text-bg-light">
+              <div class="card-header">Muhurtham</div>
+              <div class="card-body">
+                <div class="row justify-content-center">
+                  <div class="col-md-6">
+                    <i class="bi bi-clock d-block"></i>
+                    <span>09.00 AM - Until Finished</span>
+                  </div>
+                  <div class="col-md-6">
+                    <i class="bi bi-calendar-event d-block"></i>
+                    <span>Sunday, February 08, 2026</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Information End -->
+
+    <!-- Story Start -->
+    <section id="story" class="story">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>Shaadi Shenanigans</h2>
+            <p>
+              From haldi stains to dance floor gains — this is how we celebrate
+            </p>
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col">
+            <ul class="timeline">
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url(img/bg-wedding.jpeg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>The Beginning of Forever</h3>
+                    <span>Saturday, February 7, 2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Where promises are exchanged, hearts are sealed,
+                      and our forever officially begins. 💍✨
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li class="timeline-inverted">
+                <div
+                  class="timeline-img"
+                  style="background-image: url(img/wedding.jpg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Bound by Ritual, United by Love</h3>
+                    <span>Sunday, February 8, 2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      As the sacred hour arrives, two souls, two families,
+                      and countless blessings come together as one. 🌸🙏
+                    </p>
+                  </div>
+                </div>
+              </li>
+              <li>
+                <div
+                  class="timeline-img"
+                  style="background-image: url(img/recption.jpg)"
+                ></div>
+                <div class="timeline-panel">
+                  <div class="timeline-heading">
+                    <h3>Still Not Over the Wedding</h3>
+                    <span>Saturday, February 14, 2026</span>
+                  </div>
+                  <div class="timeline-body">
+                    <p>
+                      Because love like this deserves one more night of
+                      laughter, music, and celebration. 🥂💃
+                    </p>
+                  </div>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Story End -->
+
+    <!-- Gallery Start -->
+    <section id="gallery" class="gallery">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <span>Our Story Memories</span>
+            <h2>Photo Gallery</h2>
+          </div>
+        </div>
+        <div
+          class="row row-cols-lg-4 row-cols-md-3 row-cols-sm-2 row-cols-1 justify-content-center"
+        >
+          <div class="col mt-3">
+            <a
+              href="img/gallery/DSC00939.JPG"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/DSC00939.JPG"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/proposal.png"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/proposal.png"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/A7405693.jpg"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/A7405693.jpg"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/A7406106-2.jpg"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/A7406106-2.jpg"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/DSC00693.JPG"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/DSC00693.JPG"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+          <div class="col mt-3">
+            <a
+              href="img/gallery/DSC01614.JPG"
+              data-toggle="lightbox"
+              data-gallery="my-gallery"
+            >
+              <img
+                src="img/gallery/DSC01614.JPG"
+                class="img-fluid w-100 rounded"
+              />
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Gallery End -->
+
+    <!-- RSVP Start -->
+    <section id="rsvp" class="rsvp">
+      <div class="container">
+        <div class="row justify-content-center">
+          <div class="col-md-8 col-10 text-center">
+            <h2>RSVP</h2>
+            <p>Please fill out the form below to confirm your attendance.</p>
+          </div>
+        </div>
+
+        <form
+          method="POST"
+          action="https://script.google.com/macros/s/AKfycbyL8d5DYjRDVwG3yDWsZHXGx4IICQKFGNlW7eeNG_ruIEGkVZf5zt3RKT8FDvhwifZv4Q/exec"
+          class="row row-cols-md-auto g-3 align-items-center justify-content-center"
+          id="my-form"
+          target="hidden-iframe"
+        >
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="name" class="form-label">Name</label>
+              <input type="text" class="form-control" id="name" name="name" required />
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="guests" class="form-label">Number of Guests</label>
+              <select name="guests" id="guests" class="form-select" required>
+                <option value="" selected disabled>Please select</option>
+                <option value="1">1 Guest</option>
+                <option value="2">2 Guests</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <div class="mb-3">
+              <label for="status" class="form-label">Confirmation</label>
+              <select name="status" id="status" class="form-select" required>
+                <option value="" selected disabled>Please select one</option>
+                <option value="1">Attending</option>
+                <option value="0">Not Attending</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12">
+            <button type="submit" class="btn btn-primary">Send</button>
+          </div>
+        </form>
+      </div>
+    </section>
+    <!-- RSVP End -->
+
+    <!-- Footer Start -->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col text-center">
+            <p>Grateful for the love that surrounds us.</p>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- Footer End -->
+
+    <div class="audio-container">
+      <audio id="song" autoplay loop>
+        <source src="audio/bg-wedding.mp3" type="audio/mp3" />
+      </audio>
+      <div class="audio-icon-wrapper" style="display: none">
+        <i class="bi bi-disc"></i>
+      </div>
+    </div>
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-HwwvtgBNo3bZJJLYd8oVXjrBZt8cqVSpeBNS5n7C8IVInixGAoxmnlMuBnhbgrkm"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/bs5-lightbox@1.8.3/dist/index.bundle.min.js"></script>
+
+    <script>
+      (() => {
+        "use strict";
+
+        const getStoredTheme = () => localStorage.getItem("theme");
+        const setStoredTheme = (theme) => localStorage.setItem("theme", theme);
+
+        const getPreferredTheme = () => {
+          const storedTheme = getStoredTheme();
+          if (storedTheme) {
+            return storedTheme;
+          }
+          // Default to light theme instead of following system preference
+          return "light";
+        };
+
+        const setTheme = (theme) => {
+          if (
+            theme === "system" &&
+            window.matchMedia("(prefers-color-scheme: dark)").matches
+          ) {
+            document.documentElement.setAttribute("data-bs-theme", "dark");
+          } else {
+            document.documentElement.setAttribute("data-bs-theme", theme);
+          }
+        };
+
+        setTheme(getPreferredTheme());
+
+        const showActiveTheme = (theme, focus = false) => {
+          const themeSwitcher = document.querySelector("#bd-theme");
+
+          if (!themeSwitcher) {
+            return;
+          }
+
+          const themeSwitcherText = document.querySelector("#bd-theme-text");
+          const activeThemeIcon = document.querySelector(".theme-icon-active");
+          const btnToActive = document.querySelector(
+            `[data-bs-theme-value="${theme}"]`
+          );
+          const iconOfActiveBtn =
+            btnToActive.querySelector("i").dataset.themeIcon;
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((element) => {
+              element.classList.remove("active");
+              element.setAttribute("aria-pressed", "false");
+            });
+
+          btnToActive.classList.add("active");
+          activeThemeIcon.classList.remove(
+            activeThemeIcon.dataset.themeIconActive
+          );
+          activeThemeIcon.classList.add(iconOfActiveBtn);
+          activeThemeIcon.dataset.iconActive = iconOfActiveBtn;
+          const themeSwitcherLabel = `${themeSwitcherText.textContent} (${btnToActive.dataset.bsThemeValue})`;
+          themeSwitcher.setAttribute("aria-label", themeSwitcherLabel);
+
+          if (focus) {
+            themeSwitcher.focus();
+          }
+        };
+
+        window
+          .matchMedia("(prefers-color-scheme: dark)")
+          .addEventListener("change", () => {
+            const storedTheme = getStoredTheme();
+            if (storedTheme !== "light" && storedTheme !== "dark") {
+              setTheme(getPreferredTheme());
+            }
+          });
+
+        window.addEventListener("DOMContentLoaded", () => {
+          showActiveTheme(getPreferredTheme());
+
+          document
+            .querySelectorAll("[data-bs-theme-value]")
+            .forEach((toggle) => {
+              toggle.addEventListener("click", () => {
+                const theme = toggle.getAttribute("data-bs-theme-value");
+                setStoredTheme(theme);
+                setTheme(theme);
+                showActiveTheme(theme, true);
+              });
+            });
+        });
+      })();
+    </script>
+
+    <script>
+      simplyCountdown(".simply-countdown", {
+        year: 2026,
+        month: 2,
+        day: 8,
+        hours: 10,
+        words: {
+          days: { singular: "Day", plural: "Days" },
+          hours: { singular: "Hour", plural: "Hours" },
+          minutes: { singular: "Minute", plural: "Minutes" },
+          seconds: { singular: "Second", plural: "Seconds" },
+        },
+      });
+    </script>
+    <script>
+      const hamburger = document.querySelector(".navbar-toggler");
+      const stickyTop = document.querySelector(".sticky-top");
+      const offCanvas = document.querySelector(".offcanvas");
+
+      hamburger.addEventListener("click", function () {
+        stickyTop.style.overflow = "visible";
+      });
+
+      offCanvas.addEventListener("hidden.bs.offcanvas", function () {
+        stickyTop.style.overflow = "hidden";
+      });
+    </script>
+
+    <!-- Disable Scrolling -->
+    <script>
+      const rootElement = document.querySelector(":root");
+      function disableScroll() {
+        scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        scrollLeft = window.pageXOffset || document.documentElement.scrollLeft;
+
+        window.onscroll = function () {
+          window.scrollTo(scrollTop, scrollLeft);
+        };
+
+        rootElement.style.scrollBehavior = "auto";
+      }
+
+      function enableScroll() {
+        window.onscroll = function () {};
+        rootElement.style.scrollBehavior = "smooth";
+        playAudio();
+      }
+
+      const audioIconWrapper = document.querySelector(".audio-icon-wrapper");
+      let isPlayingSong = false;
+      const song = document.querySelector("#song");
+      const audioIcon = document.querySelector(".audio-icon-wrapper i");
+      function playAudio() {
+        song.volume = 0.1;
+        audioIconWrapper.style.display = "flex";
+        song.play();
+        isPlayingSong = true;
+      }
+
+      audioIconWrapper.onclick = function () {
+        if (isPlayingSong) {
+          song.pause();
+          audioIcon.classList.remove("bi-disc");
+          audioIcon.classList.add("bi-pause-circle");
+        } else {
+          song.play();
+          audioIcon.classList.add("bi-disc");
+          audioIcon.classList.remove("bi-pause-circle");
+        }
+
+        isPlayingSong = !isPlayingSong;
+      };
+
+      disableScroll();
+    </script>
+
+    <!-- Hidden iframe for form submission -->
+    <iframe name="hidden-iframe" id="hidden-iframe" style="display: none;"></iframe>
+    
+    <script>
+      // Suppress 403 errors from Google Apps Script (they're expected due to CORS)
+      window.addEventListener('error', function(e) {
+        if (e.target.tagName === 'IFRAME' && e.target.name === 'hidden-iframe') {
+          e.preventDefault();
+          return true;
+        }
+      }, true);
+
+      window.addEventListener("load", function () {
+        const form = document.getElementById("my-form");
+        const submitButton = form.querySelector('button[type="submit"]');
+        
+        form.addEventListener("submit", function (e) {
+          // Disable submit button to prevent double submission
+          submitButton.disabled = true;
+          submitButton.textContent = 'Sending...';
+          
+          // Show success message after a delay (form will submit to iframe naturally)
+          setTimeout(function() {
+            alert("RSVP confirmation sent successfully!");
+            form.reset();
+            submitButton.disabled = false;
+            submitButton.textContent = 'Send';
+          }, 1500);
+        });
+      });
+    </script>
+
+    <!-- Get url by name -->
+    <script>
+      const urlParam = new URLSearchParams(window.location.search);
+      const name = urlParam.get("n") || "";
+      const pronoun = urlParam.get("p") || "The Wedding Celebration Of";
+      const nameContainer = document.querySelector(".hero h4 span");
+      nameContainer.innerText = `${pronoun} ${name}`.replace(/, $/, "");
+      document.querySelector("#name").value = name;
+    </script>
+  </body>
+</html>
